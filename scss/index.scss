@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    padding: 25px;
+    
+    
+    div{
+        width: 70%;
+        margin: 0 auto;
+        // height: 30px;
+        vertical-align: middle;
+        display:flex;
+        justify-content: space-between;
+        img{
+            height: 30px;
+        }
+        nav{
+            display:flex;
+            align-items: center;
+
+            ul{
+                
+                display:flex;
+                justify-content: space-between;
+
+            }
+        }
+    }
+}

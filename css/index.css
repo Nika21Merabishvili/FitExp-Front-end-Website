@@ -1,0 +1,22 @@
+header {
+  width: 100%;
+  padding: 25px;
+}
+header div {
+  width: 70%;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+header div img {
+  height: 30px;
+}
+header div nav {
+  display: flex;
+  align-items: center;
+}
+header div nav ul {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=index.css.map */
