@@ -1,6 +1,10 @@
 header {
   width: 100%;
   padding: 20px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
 }
 header div {
   width: 90%;
@@ -90,4 +94,38 @@ header div ul li a {
   .hamburger {
     display: block;
   }
+}
+
+section {
+  margin-top: 82px;
+  width: 100%;
+}
+section div {
+  position: relative;
+}
+section div img {
+  width: 100%;
+}
+section div h1 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-size: 70px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
+}
+section div #soloButton {
+  background-color: white;
+  color: #1D2130;
+  border-color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+}
+section div #soloButton:hover {
+  background-color: #1D2130;
+  color: white;
+  border-color: #1D2130;
 }/*# sourceMappingURL=index.css.map */
