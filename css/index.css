@@ -19,15 +19,20 @@ header div nav {
   display: flex;
   align-items: center;
 }
-header div nav ul {
+header div ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header div nav ul li {
+@media only screen and (max-width: 1039px) {
+  header div ul {
+    display: none;
+  }
+}
+header div ul li {
   margin-left: 15px;
 }
-header div nav ul li a {
+header div ul li a {
   font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
 }
@@ -72,4 +77,17 @@ header div nav ul li a {
 
 .button-24:active {
   opacity: 0.5;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 1039px) {
+  .hamburger {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

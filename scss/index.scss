@@ -22,12 +22,17 @@ header{
         nav{
             display:flex;
             align-items: center;
-
+            
+            }
             ul{
                 
                 display:flex;
                 justify-content: space-between;
                 align-items: center;
+                
+                @media only screen and (max-width: 1039px) {
+                	display: none;
+                }
                 li{
                     margin-left: 15px;
                     a{
@@ -40,7 +45,7 @@ header{
                 
             }
         }
-    }
+    
 
 
 .current{
@@ -84,3 +89,15 @@ header{
 .button-24:active {
   opacity: .5;
 }
+
+.hamburger{
+    background-color: transparent;
+    border:0;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    @media only screen and (max-width: 1039px) {
+		display: block;
+	}
+}
+
