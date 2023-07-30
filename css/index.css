@@ -158,8 +158,10 @@ header div ul li a {
   color: #1D2130;
   font-weight: 700;
   line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
 }
 .sSec .smallTxt p {
+  font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
   line-height: 1.4;
   width: 850px;
@@ -217,12 +219,14 @@ header div ul li a {
   color: #1D2130;
   font-weight: 700;
   line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
 }
 .tSec .smallTxt p {
   margin-top: 25px;
   color: #525560;
   line-height: 1.4;
   width: 850px;
+  font-family: "BPG Arial Caps", sans-serif;
 }
 .tSec .smallTxt button {
   background-color: #70C174;

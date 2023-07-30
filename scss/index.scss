@@ -78,8 +78,10 @@ $secColor:#525560;
             color: $primColor;
             font-weight: 700;
             line-height: 1.6;
+            font-family: $pageFont;
         }
         p{
+            font-family: $pageFont;
             color: $secColor;
             line-height: 1.4;
             width: 850px;
@@ -145,12 +147,14 @@ $secColor:#525560;
             color: $primColor;
             font-weight: 700;
             line-height: 1.6;
+            font-family: $pageFont;
         }
         p{
             margin-top: 25px;
             color: $secColor;
             line-height: 1.4;
             width: 850px;
+            font-family: $pageFont;
         }
         button{
             background-color: #70C174;
