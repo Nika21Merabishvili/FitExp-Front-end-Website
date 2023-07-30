@@ -5,7 +5,7 @@ $secColor:#525560;
 
 @include myHeader;
 
-section{
+.fSec{
     margin-top: 82px;
     width: 100%;
     div{
@@ -13,29 +13,182 @@ section{
         img{
             width: 100%
         }
-        h1{
-            font-family: $pageFont;
-            color:white;
+        .textWb{
             position: absolute;
-            top: 20%;
+            top:15%;
             left: 5%;
-            font-size: 70px;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+
+            h1{
+                font-family: $pageFont;
+                color:white;
+                
+                top: 20%;
+                left: 5%;
+                font-size: 70px;
+                
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
+            }
+            #soloButton{
+                background-color: white;
+                color: $primColor ;
+                border-color: white;
+                
+                bottom: 50%;
+                left: 5%
+            }
+            #soloButton:hover{
+                background-color: $primColor;
+                color: white ;
+                border-color: $primColor;
+            }
         }
-        #soloButton{
-            background-color: white;
-            color: $primColor ;
-            border-color: white;
-            position: absolute;
-            bottom: 50%;
-            left: 5%
-        }
-        #soloButton:hover{
-            background-color: $primColor;
-            color: white ;
-            border-color: $primColor;
-        }
+        
     }
     
+}
+
+.sSec{
+    margin-top: 72px;
+    width: 100%;
+    .lnDv{
+        
+        img{
+            transform: translate(0, -150%);
+            
+        }
+        
+    }
+    .smallTxt{
+        margin-left: 15px;
+        height: 70%;
+        position: relative;
+        h2{
+            font-family: $pageFont;
+            color: $primColor;
+        }
+        h1{
+            font-size: 48px;
+            color: $primColor;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+        p{
+            color: $secColor;
+            line-height: 1.4;
+            width: 850px;
+        }
+        button{
+            background-color: #70C174;
+            color: white ;
+            border-color: #70C174;
+            position: absolute;
+            bottom: 0px;
+        }
+        button:hover{
+            background-color: white;
+            color: #70C174 ;
+            border-color: #70C174;
+        }
+    }
+    .mDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .infDv{
+        display: flex;
+        
+    }
+    .mgDv{
+            width: 30%;
+        img{
+            width: 100%;
+            border-radius: 2%;
+        }
+    }
+}
+
+
+
+.tSec{
+    margin-top: 40px;
+    width: 100%;
+    background-color: #EFF7F2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .lnDv{
+        
+        img{
+            transform: translate(0, -150%);
+            
+        }
+        
+    }
+    .smallTxt{
+        margin-left: 15px;
+        height: 70%;
+        position: relative;
+        h2{
+            font-family: $pageFont;
+            color: $primColor;
+        }
+        h1{
+            font-size: 48px;
+            color: $primColor;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+        p{
+            margin-top: 25px;
+            color: $secColor;
+            line-height: 1.4;
+            width: 850px;
+        }
+        button{
+            background-color: #70C174;
+            color: white ;
+            border-color: #70C174;
+            position: absolute;
+            bottom: 0px;
+        }
+        button:hover{
+            background-color: white;
+            color: #70C174 ;
+            border-color: #70C174;
+        }
+    }
+    .mDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .infDv{
+        display: flex;
+        
+    }
+    .mgDv{
+            width: 30%;
+        img{
+            width: 100%;
+            border-radius: 2%;
+        }
+    }
+
+    h3{
+        font-family: $pageFont;
+        font-size: 24px;
+
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
 }

@@ -96,36 +96,165 @@ header div ul li a {
   }
 }
 
-section {
+.fSec {
   margin-top: 82px;
   width: 100%;
 }
-section div {
+.fSec div {
   position: relative;
 }
-section div img {
+.fSec div img {
   width: 100%;
 }
-section div h1 {
+.fSec div .textWb {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fSec div .textWb h1 {
   font-family: "BPG Arial Caps", sans-serif;
   color: white;
-  position: absolute;
   top: 20%;
   left: 5%;
   font-size: 70px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
 }
-section div #soloButton {
+.fSec div .textWb #soloButton {
   background-color: white;
   color: #1D2130;
   border-color: white;
-  position: absolute;
   bottom: 50%;
   left: 5%;
 }
-section div #soloButton:hover {
+.fSec div .textWb #soloButton:hover {
   background-color: #1D2130;
   color: white;
   border-color: #1D2130;
+}
+
+.sSec {
+  margin-top: 72px;
+  width: 100%;
+}
+.sSec .lnDv img {
+  transform: translate(0, -150%);
+}
+.sSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+}
+.sSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+.sSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.sSec .smallTxt p {
+  color: #525560;
+  line-height: 1.4;
+  width: 850px;
+}
+.sSec .smallTxt button {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+  position: absolute;
+  bottom: 0px;
+}
+.sSec .smallTxt button:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.sSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sSec .infDv {
+  display: flex;
+}
+.sSec .mgDv {
+  width: 30%;
+}
+.sSec .mgDv img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.tSec {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #EFF7F2;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.tSec .lnDv img {
+  transform: translate(0, -150%);
+}
+.tSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+}
+.tSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+.tSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.tSec .smallTxt p {
+  margin-top: 25px;
+  color: #525560;
+  line-height: 1.4;
+  width: 850px;
+}
+.tSec .smallTxt button {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+  position: absolute;
+  bottom: 0px;
+}
+.tSec .smallTxt button:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.tSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tSec .infDv {
+  display: flex;
+}
+.tSec .mgDv {
+  width: 30%;
+}
+.tSec .mgDv img {
+  width: 100%;
+  border-radius: 2%;
+}
+.tSec h3 {
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
 }/*# sourceMappingURL=index.css.map */
