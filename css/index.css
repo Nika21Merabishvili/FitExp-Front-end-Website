@@ -192,7 +192,7 @@ header div ul li a {
 }
 .sSec .mgDv img {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 
 .tSec {
@@ -254,11 +254,201 @@ header div ul li a {
 }
 .tSec .mgDv img {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 .tSec h3 {
   font-family: "BPG Arial Caps", sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-left: 15px;
+}
+
+.cardBox {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.cardBox div {
+  width: 30%;
+  position: relative;
+}
+.cardBox div img {
+  width: 100%;
+  border-radius: 15px;
+  filter: brightness(70%);
+}
+.cardBox div .cardTxt {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 100%;
+}
+.cardBox div .cardTxt h4 {
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 150%;
+  width: 70%;
+}
+.cardBox div .cardTxt p {
+  margin: 5px;
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 70%;
+}
+
+.secChar {
+  width: 100%;
+  background-color: #0B0706;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 40px;
+}
+.secChar .charDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.secChar .charDv .chartTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.secChar .charDv .chartTxt h1 {
+  color: white;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.secChar .charDv .chartTxt p {
+  color: white;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  width: 650px;
+}
+.secChar .charDv .chart {
+  width: 25%;
+}
+.secChar .charDv .chart img {
+  width: 100%;
+}
+
+.longPhoto {
+  width: 100%;
+}
+.longPhoto .longPhotoWtext {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.longPhoto .longPhotoWtext img {
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(70%);
+}
+.longPhoto .longPhotoWtext .textInLongPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.longPhoto .longPhotoWtext .textInLongPhoto h2 {
+  color: #FFF;
+  text-align: center;
+  /* H2 */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonI:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonII {
+  background-color: white;
+  color: #1D2130;
+  border-color: white;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonII:hover {
+  background-color: #1D2130;
+  color: white;
+  border-color: #1D2130;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto .buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #0B0706;
+  margin-top: 40px;
+}
+footer .footDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+footer .lists li {
+  margin: 15px 0;
+}
+footer .lists a {
+  color: rgba(255, 255, 255, 0.6588235294);
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+footer h1 {
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .subDv {
+  width: 40%;
+}
+footer .sub {
+  border-color: white;
+  background-color: #0B0706;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+}
+footer #subButton {
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: white;
+  color: #0B0706;
+  border-color: white;
+  margin-bottom: 2px;
 }/*# sourceMappingURL=index.css.map */

@@ -113,7 +113,7 @@ $secColor:#525560;
             width: 30%;
         img{
             width: 100%;
-            border-radius: 2%;
+            border-radius: 10px;
         }
     }
 }
@@ -183,7 +183,7 @@ $secColor:#525560;
             width: 30%;
         img{
             width: 100%;
-            border-radius: 2%;
+            border-radius: 10px;
         }
     }
 
@@ -195,4 +195,146 @@ $secColor:#525560;
         margin-left: 15px;
     }
 
+}
+
+.cardBox{
+    width: 90%;
+    
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    div{
+        width: 30%;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 15px;
+            filter: brightness(70%);
+        }
+        .cardTxt{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 100%;
+            h4{
+                color: #FFF;
+                font-family: $pageFont;
+                font-size: 28px;
+                font-weight: 900;
+                line-height: 150%; 
+                width: 70%;
+                
+            }
+            p{
+                margin: 5px;
+                color: #FFF;
+                font-family: $pageFont;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%; 
+                width: 70%;
+            }
+        }
+    }
+}
+.secChar{
+    width: 100%;
+    background-color: #0B0706;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-bottom: 40px;
+    .charDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .chartTxt{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h1{
+                color: white;
+                font-family: $pageFont;
+                font-size: 48px;
+
+                font-weight: 700;
+                line-height: 120%; /* 57.6px */
+            }
+            p{
+                color: white;
+                font-family: $pageFont;
+                font-size: 24px;
+
+                font-weight: 700;
+                line-height: 120%; /* 57.6px */
+                width: 650px;
+            }
+        }
+        .chart{
+            width: 25%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@include LONGphoto;
+
+footer{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #0B0706;
+    margin-top: 40px;
+    .footDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lists{
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        li{
+            margin: 15px 0;
+        }
+        a{
+            color: #ffffffa8;
+            font-family: $pageFont;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 22.4px */
+        }
+    }
+    h1{
+        color: #FFF;
+        font-family: $pageFont;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 140%; /* 56px */
+        
+    }
+    .subDv{
+        width: 40%;
+        
+    }
+    .sub{
+        border-color: white ;
+        background-color: #0B0706;
+        height: 40px;
+        border-radius:  10px 0px 0px 10px  ;
+        margin-right: -5px;
+        
+    }
+    #subButton{
+        border: 0px;
+        border-radius:  0px 10px 10px 0px ;
+        background-color: white;
+        color: #0B0706;
+        border-color: white;
+        margin-bottom: 2px;
+    }
 }

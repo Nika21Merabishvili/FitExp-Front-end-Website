@@ -1,3 +1,8 @@
+$pageFont:"BPG Arial Caps", sans-serif;
+$primColor:#1D2130;
+$secColor:#525560;
+
+
 @mixin myHeader{
     header{
         width: 100%;
@@ -102,3 +107,69 @@
     }
 }
 
+@mixin LONGphoto{
+    .longPhoto{
+        width: 100%;
+        .longPhotoWtext{
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 20px;
+                filter: brightness(70%);
+            }
+            .textInLongPhoto{
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                h2{
+                    color: #FFF;
+                    text-align: center;
+
+                    /* H2 */
+                    font-family: $pageFont;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 57.6px */
+                }
+                #buttonI{
+                            
+                    background-color: #70C174;
+                    color: white ;
+                    border-color: #70C174;
+                    
+                
+                
+                }
+                #buttonI:hover{
+                    background-color: white;
+                    color: #70C174 ;
+                    border-color: #70C174;
+                }
+                #buttonII{
+                            
+                    background-color: white;
+                    color: $primColor;
+                    border-color: white;
+                    
+                
+                
+                }
+                #buttonII:hover{
+                    background-color: $primColor;
+                    color: white ;
+                    border-color: $primColor;
+                }
+                .buttons{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-around; 
+                }
+            }
+        }
+    }
+}
