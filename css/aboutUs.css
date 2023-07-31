@@ -4,7 +4,7 @@ header {
   background-color: #FFFFFF;
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 header div {
   width: 90%;
@@ -94,4 +94,279 @@ header div ul li a {
   .hamburger {
     display: block;
   }
+}
+
+.fSec {
+  margin-top: 82px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.fSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fSec .infDv {
+  display: flex;
+  width: 50%;
+}
+.fSec .infDv img {
+  transform: translate(0, -150%);
+}
+.fSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+}
+.fSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+.fSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+.fSec .wwd {
+  width: 40%;
+  margin-top: 33px;
+}
+.fSec .wwd h3 {
+  color: #1D2130;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+.fSec .wwd p {
+  color: #1D2130;
+  opacity: 0.6999999881;
+  /* Paragraph */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.longPhoto {
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+.longPhoto .longPhotoWtext {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.longPhoto .longPhotoWtext img {
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(70%);
+}
+.longPhoto .longPhotoWtext .textInLongPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.longPhoto .longPhotoWtext .textInLongPhoto h2 {
+  color: #FFF;
+  text-align: center;
+  /* H2 */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonI:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonII {
+  background-color: white;
+  color: #1D2130;
+  border-color: white;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto #buttonII:hover {
+  background-color: #1D2130;
+  color: white;
+  border-color: #1D2130;
+}
+.longPhoto .longPhotoWtext .textInLongPhoto .buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ttxtSec {
+  width: 100%;
+  padding-top: 400px;
+  padding-bottom: 100px;
+  background: var(--green-tertiary, #EFF7F2);
+  transform: translate(0%, -40%);
+}
+.ttxtSec .txtCards {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.ttxtSec .txtCards .cardTxt {
+  width: 30%;
+}
+.ttxtSec .txtCards .cardTxt h4 {
+  color: var(--primary-text, #1D2130);
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.ttxtSec .txtCards .cardTxt h3 {
+  color: #1D2130;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  margin-bottom: 10px;
+}
+.ttxtSec .txtCards .cardTxt p {
+  color: #1D2130;
+  opacity: 0.6999999881;
+  /* Paragraph */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.awards {
+  width: 100%;
+}
+.awards .aDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.awards .aDv .atDv {
+  color: var(--primary-text, #1D2130);
+  text-align: center;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.awards .aDv .aI {
+  margin-top: 30px;
+}
+.awards .aDv .aI img {
+  width: 100%;
+}
+
+.team {
+  width: 100%;
+  margin-top: 40px;
+}
+.team .teamDiv {
+  width: 90%;
+  margin: 0 auto;
+}
+.team .teamDiv h1 {
+  color: var(--primary-text, #1D2130);
+  text-align: center;
+  /* H2 */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.team .teamDiv .cardBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team .teamDiv .cardBox .card {
+  width: 300px;
+  margin-top: 50px;
+}
+.team .teamDiv .cardBox .card img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #0B0706;
+  margin-top: 40px;
+}
+footer .footDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+footer .lists li {
+  margin: 15px 0;
+}
+footer .lists a {
+  color: rgba(255, 255, 255, 0.6588235294);
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+footer h1 {
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .subDv {
+  width: 40%;
+}
+footer .sub {
+  border-color: white;
+  background-color: #0B0706;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+}
+footer #subButton {
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: white;
+  color: #0B0706;
+  border-color: white;
+  margin-bottom: 2px;
 }/*# sourceMappingURL=aboutUs.css.map */

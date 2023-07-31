@@ -4,7 +4,7 @@ header {
   background-color: #FFFFFF;
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 header div {
   width: 90%;
@@ -345,6 +345,8 @@ header div ul li a {
 
 .longPhoto {
   width: 100%;
+  z-index: 100;
+  position: relative;
 }
 .longPhoto .longPhotoWtext {
   width: 90%;
