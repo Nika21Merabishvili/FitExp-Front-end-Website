@@ -4,7 +4,7 @@ header {
   background-color: #FFFFFF;
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 header div {
   width: 90%;
@@ -94,4 +94,221 @@ header div ul li a {
   .hamburger {
     display: block;
   }
+}
+
+.sSec {
+  margin-top: 82px;
+  width: 100%;
+  background-color: #EBF0F9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sSec .lnDv img {
+  transform: translate(0, -150%);
+}
+.sSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+  width: 60%;
+}
+.sSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+.sSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+.sSec .smallTxt p {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #525560;
+  line-height: 1.4;
+  width: 850px;
+}
+.sSec .smallTxt button {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+  position: absolute;
+  bottom: 0px;
+}
+.sSec .smallTxt button:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.sSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sSec .infDv {
+  display: flex;
+  flex-direction: row;
+}
+.sSec .mgDv {
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+}
+.sSec .mgDv div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sSec .mgDv h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+}
+.sSec .mgDv p {
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 10px;
+}
+.sSec .mgDv img {
+  width: 15px;
+}
+
+.formSec {
+  width: 100%;
+  margin-top: 100px;
+}
+.formSec form {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.formSec form div {
+  display: flex;
+  flex-direction: column;
+}
+.formSec label {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: var(--primary-text, #1D2130);
+  opacity: 0.6000000238;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 19.2px */
+}
+.formSec input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.formSec input[type=email] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.formSec textarea {
+  width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #E5E5E5;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonI {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+}
+
+#buttonI:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: white;
+}
+
+.button {
+  margin: 0 auto;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 100px;
+}
+
+footer {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #0B0706;
+  margin-top: 40px;
+}
+footer .footDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+footer .lists li {
+  margin: 15px 0;
+}
+footer .lists a {
+  color: rgba(255, 255, 255, 0.6588235294);
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+footer h1 {
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .subDv {
+  width: 40%;
+}
+footer .sub {
+  border-color: white;
+  background-color: #0B0706;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+}
+footer #subButton {
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: white;
+  color: #0B0706;
+  border-color: white;
+  margin-bottom: 2px;
 }/*# sourceMappingURL=contact.css.map */

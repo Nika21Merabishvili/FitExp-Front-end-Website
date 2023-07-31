@@ -4,3 +4,181 @@ $secColor:#525560;
 @import "mixins";
 
 @include myHeader;
+
+
+.sSec{
+    margin-top: 82px;
+    width: 100%;
+    background-color: #EBF0F9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .lnDv{
+        
+        img{
+            transform: translate(0, -150%);
+            
+        }
+        
+    }
+    .smallTxt{
+        margin-left: 15px;
+        height: 70%;
+        position: relative;
+        width: 60%;
+        h2{
+            font-family: $pageFont;
+            color: $primColor;
+        }
+        h1{
+            font-size: 48px;
+            color: $primColor;
+            font-weight: 700;
+            line-height: 1.6;
+            font-family: $pageFont;
+        }
+        p{
+            font-family: $pageFont;
+            color: $secColor;
+            line-height: 1.4;
+            width: 850px;
+        }
+        button{
+            background-color: #70C174;
+            color: white ;
+            border-color: #70C174;
+            position: absolute;
+            bottom: 0px;
+        }
+        button:hover{
+            background-color: white;
+            color: #70C174 ;
+            border-color: #70C174;
+        }
+    }
+    .mDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .infDv{
+        display: flex;
+        flex-direction: row;
+    }
+    .mgDv{
+        width: 30%;
+        flex-direction: column;
+        display: flex;
+        
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            color: var(--primary-text, #1D2130);
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 38.4px */
+        }
+        p{
+            color: var(--secondary-text, #525560);
+            /* Paragraph */
+            font-family: $pageFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; 
+            margin: 10px;
+        }
+        img{
+            width: 15px;
+        }
+    }
+}
+
+
+.formSec{
+    width: 100%;
+    margin-top: 100px;
+    form{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    label{
+        font-family: $pageFont;
+        color: var(--primary-text, #1D2130);
+        opacity: 0.6000000238418579;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 19.2px */
+    }
+    input[type=text] {
+        width: 300px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #E5E5E5;
+      }
+    
+    input[type=email] {
+        width: 300px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    textarea{
+        width: 700px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border: 1px solid #E5E5E5;
+    
+    }
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+#buttonI {
+    
+    background-color: #70C174;
+    color: white;
+    border-color: #70C174;
+}
+#buttonI:hover {
+    background-color: white;
+    color: #70C174;
+    border-color: white;
+}
+.button{
+    margin: 0 auto;
+}
+
+
+
+
+iframe{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+
+@include myFooter;
