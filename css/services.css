@@ -4,7 +4,7 @@ header {
   background-color: #FFFFFF;
   position: fixed;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 header div {
   width: 90%;
@@ -94,4 +94,150 @@ header div ul li a {
   .hamburger {
     display: block;
   }
+}
+
+.fSec {
+  margin-top: 82px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.fSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fSec .infDv {
+  display: flex;
+  width: 50%;
+}
+.fSec .infDv img {
+  transform: translate(0, -150%);
+}
+.fSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+}
+.fSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+.fSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+.fSec .wwd {
+  width: 40%;
+  margin-top: 33px;
+}
+.fSec .wwd h3 {
+  color: #1D2130;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+.fSec .wwd p {
+  color: #1D2130;
+  opacity: 0.6999999881;
+  /* Paragraph */
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.servCard {
+  width: 100%;
+}
+.servCard div {
+  width: 70%;
+  margin: 0 auto;
+}
+.servCard div .card {
+  width: 100%;
+  position: relative;
+}
+.servCard div .card h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  /* H2 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.servCard div img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px;
+  filter: brightness(70%);
+}
+
+footer {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #0B0706;
+  margin-top: 40px;
+}
+footer .footDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+footer .lists li {
+  margin: 15px 0;
+}
+footer .lists a {
+  color: rgba(255, 255, 255, 0.6588235294);
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+footer h1 {
+  color: #FFF;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .subDv {
+  width: 40%;
+}
+footer .sub {
+  border-color: white;
+  background-color: #0B0706;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+}
+footer #subButton {
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: white;
+  color: #0B0706;
+  border-color: white;
+  margin-bottom: 2px;
 }/*# sourceMappingURL=services.css.map */

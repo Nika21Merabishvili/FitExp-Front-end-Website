@@ -4,3 +4,107 @@ $secColor:#525560;
 @import "mixins";
 
 @include myHeader;
+
+.fSec {
+    margin-top: 82px;
+    width: 100%;
+    margin-bottom: 40px;
+    .mDv {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .infDv{
+        display: flex;
+        width: 50%;
+        img {
+            transform: translate(0, -150%);
+        }
+    }
+    .smallTxt{
+        margin-left: 15px;
+        height: 70%;
+        position: relative;
+        h2{
+            font-family: $pageFont;
+            color: $primColor;
+        }
+        h1{
+            font-size: 48px;
+            color: $primColor;
+            font-weight: 700;
+            line-height: 1.6;
+            font-family: $pageFont;
+        }
+    }
+    .wwd{
+        width: 40%;
+        margin-top: 33px;
+        h3{
+            color: $primColor;
+            font-family: $pageFont;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 30px */
+        }
+        p{
+            color: $primColor;
+            opacity: 0.699999988079071;
+            /* Paragraph */
+            font-family: $pageFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+        }
+    }
+}
+
+
+.servCard{
+    width: 100%;
+    div{
+        width: 70%;
+        margin: 0 auto;
+        .card{
+            width: 100%;
+            position: relative;
+            h1{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                color: #FFF;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                /* H2 */
+                font-family: Roboto;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 57.6px */
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 20px;
+            margin: 20px;
+            filter: brightness(70%);
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@include myFooter;

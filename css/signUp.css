@@ -1,0 +1,108 @@
+.formSec {
+  width: 100%;
+  margin-top: 100px;
+}
+.formSec form {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.formSec form div {
+  display: flex;
+  flex-direction: column;
+}
+.formSec label {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: var(--primary-text, #1D2130);
+  opacity: 0.6000000238;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 19.2px */
+}
+.formSec input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.formSec input[type=email], .formSec input[type=password] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.formSec textarea {
+  width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid #E5E5E5;
+}
+
+.button {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#buttonI {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+}
+
+#buttonI:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: white;
+}
+
+.button {
+  margin: 0 auto;
+}
+
+.button-24 {
+  background: #1D2130;
+  border: 1px solid #1D2130;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #1D2130;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}/*# sourceMappingURL=signUp.css.map */
