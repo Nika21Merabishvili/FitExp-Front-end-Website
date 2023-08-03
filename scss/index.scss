@@ -34,6 +34,10 @@ $secColor:#525560;
                 
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
+                @media only screen and (max-width: 835px) {
+                    font-size: 50px;
+                }
+                
             }
             #soloButton{
                 background-color: white;
@@ -61,7 +65,9 @@ $secColor:#525560;
         
         img{
             transform: translate(0, -150%);
-            
+            @media only screen and (max-width: 1171px) {
+                display: none;
+            }
         }
         
     }
@@ -69,9 +75,26 @@ $secColor:#525560;
         margin-left: 15px;
         height: 70%;
         position: relative;
+        @media only screen and (max-width: 981px) {
+            width: 400px;
+        }
+        @media only screen and (max-width: 835px) {
+            height: 400px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h2{
             font-family: $pageFont;
             color: $primColor;
+            @media only screen and (max-width: 1171px) {
+                margin-bottom: -13px;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin-top: 20px;
+            }
         }
         h1{
             font-size: 48px;
@@ -79,12 +102,44 @@ $secColor:#525560;
             font-weight: 700;
             line-height: 1.6;
             font-family: $pageFont;
+            @media only screen and (max-width: 1687px) {
+                font-size: 40px;
+                
+            }
+            @media only screen and (max-width: 1488px) {
+                font-size: 32px;
+                width: 650px;
+                line-height: 1.4;
+                
+            }
+            @media only screen and (max-width: 981px) {
+                width:400px ;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
+            }
         }
         p{
             font-family: $pageFont;
             color: $secColor;
             line-height: 1.4;
             width: 850px;
+            @media only screen and (max-width: 1687px) {
+                font-size: 15px;
+                
+            }
+            @media only screen and (max-width: 1488px) {
+                font-size: 12px;
+                width: 650px;
+            }
+            @media only screen and (max-width: 981px) {
+            width: 400px;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
+            }
         }
         button{
             background-color: #70C174;
@@ -92,6 +147,9 @@ $secColor:#525560;
             border-color: #70C174;
             position: absolute;
             bottom: 0px;
+            @media only screen and (max-width: 835px) {
+                transform: translate(-50%, 0%);
+            }
         }
         button:hover{
             background-color: white;
@@ -104,16 +162,33 @@ $secColor:#525560;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: 835px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        
     }
     .infDv{
         display: flex;
         
     }
+    .resDv{
+        @media only screen and (max-width: 835px) {
+            height: 200px;
+        }
+    }
     .mgDv{
             width: 30%;
+            @media only screen and (max-width: 981px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 835px) {
+                width: 400px;
+            }
         img{
             width: 100%;
             border-radius: 10px;
+            
         }
     }
 }
@@ -126,11 +201,17 @@ $secColor:#525560;
     background-color: #EFF7F2;
     padding-top: 70px;
     padding-bottom: 70px;
+    @media only screen and (max-width: 835px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .lnDv{
         
         img{
             transform: translate(0, -150%);
-            
+            @media only screen and (max-width: 1171px) {
+                display: none;
+            }
         }
         
     }
@@ -138,15 +219,29 @@ $secColor:#525560;
         margin-left: 15px;
         height: 70%;
         position: relative;
+        @media only screen and (max-width: 835px) {
+            text-align: center;
+            margin: 0px;
+        }
         img{
             @media only screen and (max-width: 1687px) {
                 height: 250px;
                 margin-top: 15px;
             }
+            @media only screen and (max-width: 1056px) {
+                display: none;
+            }
         }
         h2{
             font-family: $pageFont;
             color: $primColor;
+            @media only screen and (max-width: 1171px) {
+                margin-bottom: -13px;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin-top: 20px;
+            }
         }
         h1{
             font-size: 48px;
@@ -157,6 +252,18 @@ $secColor:#525560;
             @media only screen and (max-width: 1687px) {
                 font-size: 40px;
                 
+            }
+            @media only screen and (max-width: 1488px) {
+                font-size: 32px;
+                width: 650px;
+                line-height: 1.4;
+            }
+            @media only screen and (max-width: 981px) {
+                width:400px ;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
             }
         }
         p{
@@ -170,16 +277,81 @@ $secColor:#525560;
                 width: 650px;
                 margin-top: 15px;
             }
+            @media only screen and (max-width: 1488px) {
+                font-size: 12px;
+                width: 650px;
+            }
+            @media only screen and (max-width: 1056px) {
+                margin-top: 5px;
+            }
+            @media only screen and (max-width: 981px) {
+                width:400px ;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
+            }
+        }
+        ul{
+            margin: 15px; 
+            margin-left: 30px;
+            @media only screen and (max-width: 1488px) {
+                display: flex;
+                flex-wrap: wrap;
+                width: 550px;
+            }
+            @media only screen and (max-width: 1056px) {
+                margin-left: 0px; 
+            }
+            @media only screen and (max-width: 981px) {
+                width:400px ;
+            }
+            @media only screen and (max-width: 835px) {
+                justify-content: center;
+                margin: 0px;
+            }
+        }
+        #liX1{
+            list-style-image: url(../images/Icon1.svg);
+            @media only screen and (max-width: 1056px) {
+                list-style-image: none;  
+            }
+        }
+        #liX2{
+            list-style-image: url(../images/Icon2.svg);
+            @media only screen and (max-width: 1056px) {
+                list-style-image: none;  
+            }
+        }
+        #liX3{
+            list-style-image: url(../images/Icon3.svg);
+            @media only screen and (max-width: 1056px) {
+                list-style-image: none;  
+            }
+        }
+        #liX4{
+            list-style-image: url(../images/Icon4.svg);
+            @media only screen and (max-width: 1056px) {
+                list-style-image: none;  
+            }
         }
         li{
+            
             p{
+                width: 400px;
                 @media only screen and (max-width: 1687px) {
                     font-size: 12px;
                     width: 650px;
                     margin-top: 10px;
-            }
+                }
+                @media only screen and (max-width: 1488px) {
+                    font-size: 12px;
+                    width: 250px;
+                    margin-top: 10px;
+                }
             }
         }
+        
         button{
             background-color: #70C174;
             color: white ;
@@ -198,6 +370,10 @@ $secColor:#525560;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: 835px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
     .infDv{
         display: flex;
@@ -205,6 +381,12 @@ $secColor:#525560;
     }
     .mgDv{
             width: 30%;
+            @media only screen and (max-width: 981px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 835px) {
+                width: 400px;
+            }
         img{
             width: 100%;
             border-radius: 10px;
@@ -217,20 +399,174 @@ $secColor:#525560;
 
         font-weight: 700;
         margin-left: 15px;
+        @media only screen and (max-width: 1488px) {
+            font-size: 20px;
+            margin-left: 0px    ;
+        }
+        @media only screen and (max-width: 835px) {
+            text-align: center;
+            
+        }
+        
     }
 
 }
 
+
+.fSec{
+    margin-top: 72px;
+    width: 100%;
+    .lnDv{
+        
+        img{
+            transform: translate(0, -150%);
+            @media only screen and (max-width: 1171px) {
+                display: none;
+            }
+        }
+        
+    }
+    .smallTxt{
+        margin-left: 15px;
+        height: 70%;
+        position: relative;
+        @media only screen and (max-width: 981px) {
+            width: 400px;
+        }
+        @media only screen and (max-width: 888px) {
+            height: 200px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h2{
+            font-family: $pageFont;
+            color: $primColor;
+            @media only screen and (max-width: 1171px) {
+                margin-bottom: -13px;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        h1{
+            font-size: 48px;
+            color: $primColor;
+            font-weight: 700;
+            line-height: 1.6;
+            font-family: $pageFont;
+            @media only screen and (max-width: 1687px) {
+                font-size: 40px;
+                
+            }
+            @media only screen and (max-width: 1488px) {
+                font-size: 32px;
+                width: 650px;
+                line-height: 1.4;
+                
+            }
+            @media only screen and (max-width: 981px) {
+                width:400px ;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
+            }
+        }
+        p{
+            font-family: $pageFont;
+            color: $secColor;
+            line-height: 1.4;
+            width: 850px;
+            @media only screen and (max-width: 1687px) {
+                font-size: 15px;
+                
+            }
+            @media only screen and (max-width: 1488px) {
+                font-size: 12px;
+                width: 650px;
+            }
+            @media only screen and (max-width: 981px) {
+            width: 400px;
+            }
+            @media only screen and (max-width: 835px) {
+                text-align: center;
+                margin: 0px;
+            }
+        }
+        button{
+            background-color: #70C174;
+            color: white ;
+            border-color: #70C174;
+            position: absolute;
+            bottom: 0px;
+            @media only screen and (max-width: 835px) {
+                transform: translate(-50%, 0%);
+            }
+        }
+        button:hover{
+            background-color: white;
+            color: #70C174 ;
+            border-color: #70C174;
+        }
+    }
+    .mDv{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 835px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        
+    }
+    .infDv{
+        display: flex;
+        
+    }
+    .resDv{
+        @media only screen and (max-width: 835px) {
+            height: 200px;
+        }
+    }
+    .mgDv{
+            width: 30%;
+            @media only screen and (max-width: 981px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 835px) {
+                width: 400px;
+            }
+        img{
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+    }
+}
+
 .cardBox{
     width: 90%;
-    
     margin: 15px auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    @media only screen and (max-width: 1488px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
     div{
         width: 30%;
         position: relative;
+        @media only screen and (max-width: 1488px) {
+            width: 400px;
+            margin-top: 15px;
+        }
         img{
             width: 100%;
             border-radius: 15px;
@@ -279,6 +615,12 @@ $secColor:#525560;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        
+        @media only screen and (max-width: 679px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    
         .chartTxt{
             display: flex;
             flex-direction: column;
@@ -290,6 +632,15 @@ $secColor:#525560;
 
                 font-weight: 700;
                 line-height: 120%; /* 57.6px */
+                @media only screen and (max-width: 967px) {
+                    font-size: 40px;
+                    width: 400px;
+                }
+                @media only screen and (max-width: 679px) {
+                    text-align: center;
+                    margin: 0px;
+                }
+                
             }
             p{
                 color: white;
@@ -299,6 +650,14 @@ $secColor:#525560;
                 font-weight: 700;
                 line-height: 120%; /* 57.6px */
                 width: 650px;
+                @media only screen and (max-width: 967px) {
+                    font-size: 20px;
+                    width: 400px;
+                }
+                @media only screen and (max-width: 679px) {
+                    text-align: center;
+                    margin: 0px;
+                }
             }
         }
         .chart{
@@ -309,6 +668,9 @@ $secColor:#525560;
         }
     }
 }
+
+
+
 @include LONGphoto;
 
 @include myFooter;

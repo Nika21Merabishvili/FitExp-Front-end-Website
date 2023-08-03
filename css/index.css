@@ -124,6 +124,11 @@ header div ul li a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(179, 179, 179, 0.562);
 }
+@media only screen and (max-width: 835px) {
+  .fSec div .textWb h1 {
+    font-size: 50px;
+  }
+}
 .fSec div .textWb #soloButton {
   background-color: white;
   color: #1D2130;
@@ -144,14 +149,44 @@ header div ul li a {
 .sSec .lnDv img {
   transform: translate(0, -150%);
 }
+@media only screen and (max-width: 1171px) {
+  .sSec .lnDv img {
+    display: none;
+  }
+}
 .sSec .smallTxt {
   margin-left: 15px;
   height: 70%;
   position: relative;
 }
+@media only screen and (max-width: 981px) {
+  .sSec .smallTxt {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .sSec .smallTxt {
+    height: 400px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 1171px) {
+  .sSec .smallTxt h2 {
+    margin-bottom: -13px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .sSec .smallTxt h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 .sSec .smallTxt h1 {
   font-size: 48px;
@@ -160,11 +195,56 @@ header div ul li a {
   line-height: 1.6;
   font-family: "BPG Arial Caps", sans-serif;
 }
+@media only screen and (max-width: 1687px) {
+  .sSec .smallTxt h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .sSec .smallTxt h1 {
+    font-size: 32px;
+    width: 650px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .sSec .smallTxt h1 {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .sSec .smallTxt h1 {
+    text-align: center;
+    margin: 0px;
+  }
+}
 .sSec .smallTxt p {
   font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
   line-height: 1.4;
   width: 850px;
+}
+@media only screen and (max-width: 1687px) {
+  .sSec .smallTxt p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .sSec .smallTxt p {
+    font-size: 12px;
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .sSec .smallTxt p {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .sSec .smallTxt p {
+    text-align: center;
+    margin: 0px;
+  }
 }
 .sSec .smallTxt button {
   background-color: #70C174;
@@ -172,6 +252,11 @@ header div ul li a {
   border-color: #70C174;
   position: absolute;
   bottom: 0px;
+}
+@media only screen and (max-width: 835px) {
+  .sSec .smallTxt button {
+    transform: translate(-50%, 0%);
+  }
 }
 .sSec .smallTxt button:hover {
   background-color: white;
@@ -184,11 +269,32 @@ header div ul li a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 835px) {
+  .sSec .mDv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .sSec .infDv {
   display: flex;
 }
+@media only screen and (max-width: 835px) {
+  .sSec .resDv {
+    height: 200px;
+  }
+}
 .sSec .mgDv {
   width: 30%;
+}
+@media only screen and (max-width: 981px) {
+  .sSec .mgDv {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .sSec .mgDv {
+    width: 400px;
+  }
 }
 .sSec .mgDv img {
   width: 100%;
@@ -202,13 +308,30 @@ header div ul li a {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+@media only screen and (max-width: 835px) {
+  .tSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 .tSec .lnDv img {
   transform: translate(0, -150%);
+}
+@media only screen and (max-width: 1171px) {
+  .tSec .lnDv img {
+    display: none;
+  }
 }
 .tSec .smallTxt {
   margin-left: 15px;
   height: 70%;
   position: relative;
+}
+@media only screen and (max-width: 835px) {
+  .tSec .smallTxt {
+    text-align: center;
+    margin: 0px;
+  }
 }
 @media only screen and (max-width: 1687px) {
   .tSec .smallTxt img {
@@ -216,9 +339,25 @@ header div ul li a {
     margin-top: 15px;
   }
 }
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt img {
+    display: none;
+  }
+}
 .tSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 1171px) {
+  .tSec .smallTxt h2 {
+    margin-bottom: -13px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec .smallTxt h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 .tSec .smallTxt h1 {
   font-size: 48px;
@@ -230,6 +369,24 @@ header div ul li a {
 @media only screen and (max-width: 1687px) {
   .tSec .smallTxt h1 {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .tSec .smallTxt h1 {
+    font-size: 32px;
+    width: 650px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .tSec .smallTxt h1 {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec .smallTxt h1 {
+    text-align: center;
+    margin: 0px;
   }
 }
 .tSec .smallTxt p {
@@ -246,10 +403,101 @@ header div ul li a {
     margin-top: 15px;
   }
 }
+@media only screen and (max-width: 1488px) {
+  .tSec .smallTxt p {
+    font-size: 12px;
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt p {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .tSec .smallTxt p {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec .smallTxt p {
+    text-align: center;
+    margin: 0px;
+  }
+}
+.tSec .smallTxt ul {
+  margin: 15px;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 1488px) {
+  .tSec .smallTxt ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt ul {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .tSec .smallTxt ul {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec .smallTxt ul {
+    justify-content: center;
+    margin: 0px;
+  }
+}
+.tSec .smallTxt #liX1 {
+  list-style-image: url(../images/Icon1.svg);
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt #liX1 {
+    list-style-image: none;
+  }
+}
+.tSec .smallTxt #liX2 {
+  list-style-image: url(../images/Icon2.svg);
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt #liX2 {
+    list-style-image: none;
+  }
+}
+.tSec .smallTxt #liX3 {
+  list-style-image: url(../images/Icon3.svg);
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt #liX3 {
+    list-style-image: none;
+  }
+}
+.tSec .smallTxt #liX4 {
+  list-style-image: url(../images/Icon4.svg);
+}
+@media only screen and (max-width: 1056px) {
+  .tSec .smallTxt #liX4 {
+    list-style-image: none;
+  }
+}
+.tSec .smallTxt li p {
+  width: 400px;
+}
 @media only screen and (max-width: 1687px) {
   .tSec .smallTxt li p {
     font-size: 12px;
     width: 650px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .tSec .smallTxt li p {
+    font-size: 12px;
+    width: 250px;
     margin-top: 10px;
   }
 }
@@ -271,11 +519,27 @@ header div ul li a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 835px) {
+  .tSec .mDv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .tSec .infDv {
   display: flex;
 }
 .tSec .mgDv {
   width: 30%;
+}
+@media only screen and (max-width: 981px) {
+  .tSec .mgDv {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec .mgDv {
+    width: 400px;
+  }
 }
 .tSec .mgDv img {
   width: 100%;
@@ -287,6 +551,176 @@ header div ul li a {
   font-weight: 700;
   margin-left: 15px;
 }
+@media only screen and (max-width: 1488px) {
+  .tSec h3 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tSec h3 {
+    text-align: center;
+  }
+}
+
+.fSec {
+  margin-top: 72px;
+  width: 100%;
+}
+.fSec .lnDv img {
+  transform: translate(0, -150%);
+}
+@media only screen and (max-width: 1171px) {
+  .fSec .lnDv img {
+    display: none;
+  }
+}
+.fSec .smallTxt {
+  margin-left: 15px;
+  height: 70%;
+  position: relative;
+}
+@media only screen and (max-width: 981px) {
+  .fSec .smallTxt {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 888px) {
+  .fSec .smallTxt {
+    height: 200px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.fSec .smallTxt h2 {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #1D2130;
+}
+@media only screen and (max-width: 1171px) {
+  .fSec .smallTxt h2 {
+    margin-bottom: -13px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .fSec .smallTxt h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.fSec .smallTxt h1 {
+  font-size: 48px;
+  color: #1D2130;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+@media only screen and (max-width: 1687px) {
+  .fSec .smallTxt h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .fSec .smallTxt h1 {
+    font-size: 32px;
+    width: 650px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .fSec .smallTxt h1 {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .fSec .smallTxt h1 {
+    text-align: center;
+    margin: 0px;
+  }
+}
+.fSec .smallTxt p {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: #525560;
+  line-height: 1.4;
+  width: 850px;
+}
+@media only screen and (max-width: 1687px) {
+  .fSec .smallTxt p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1488px) {
+  .fSec .smallTxt p {
+    font-size: 12px;
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .fSec .smallTxt p {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .fSec .smallTxt p {
+    text-align: center;
+    margin: 0px;
+  }
+}
+.fSec .smallTxt button {
+  background-color: #70C174;
+  color: white;
+  border-color: #70C174;
+  position: absolute;
+  bottom: 0px;
+}
+@media only screen and (max-width: 835px) {
+  .fSec .smallTxt button {
+    transform: translate(-50%, 0%);
+  }
+}
+.fSec .smallTxt button:hover {
+  background-color: white;
+  color: #70C174;
+  border-color: #70C174;
+}
+.fSec .mDv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 835px) {
+  .fSec .mDv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.fSec .infDv {
+  display: flex;
+}
+@media only screen and (max-width: 835px) {
+  .fSec .resDv {
+    height: 200px;
+  }
+}
+.fSec .mgDv {
+  width: 30%;
+}
+@media only screen and (max-width: 981px) {
+  .fSec .mgDv {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .fSec .mgDv {
+    width: 400px;
+  }
+}
+.fSec .mgDv img {
+  width: 100%;
+  border-radius: 10px;
+}
 
 .cardBox {
   width: 90%;
@@ -295,9 +729,21 @@ header div ul li a {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 1488px) {
+  .cardBox {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .cardBox div {
   width: 30%;
   position: relative;
+}
+@media only screen and (max-width: 1488px) {
+  .cardBox div {
+    width: 400px;
+    margin-top: 15px;
+  }
 }
 .cardBox div img {
   width: 100%;
@@ -351,6 +797,12 @@ header div ul li a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 679px) {
+  .secChar .charDv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .secChar .charDv .chartTxt {
   display: flex;
   flex-direction: column;
@@ -363,6 +815,18 @@ header div ul li a {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
+@media only screen and (max-width: 967px) {
+  .secChar .charDv .chartTxt h1 {
+    font-size: 40px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 679px) {
+  .secChar .charDv .chartTxt h1 {
+    text-align: center;
+    margin: 0px;
+  }
+}
 .secChar .charDv .chartTxt p {
   color: white;
   font-family: "BPG Arial Caps", sans-serif;
@@ -370,6 +834,18 @@ header div ul li a {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
   width: 650px;
+}
+@media only screen and (max-width: 967px) {
+  .secChar .charDv .chartTxt p {
+    font-size: 20px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 679px) {
+  .secChar .charDv .chartTxt p {
+    text-align: center;
+    margin: 0px;
+  }
 }
 .secChar .charDv .chart {
   width: 25%;
