@@ -210,6 +210,12 @@ header div ul li a {
   height: 70%;
   position: relative;
 }
+@media only screen and (max-width: 1687px) {
+  .tSec .smallTxt img {
+    height: 250px;
+    margin-top: 15px;
+  }
+}
 .tSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
@@ -221,12 +227,31 @@ header div ul li a {
   line-height: 1.6;
   font-family: "BPG Arial Caps", sans-serif;
 }
+@media only screen and (max-width: 1687px) {
+  .tSec .smallTxt h1 {
+    font-size: 40px;
+  }
+}
 .tSec .smallTxt p {
   margin-top: 25px;
   color: #525560;
   line-height: 1.4;
   width: 850px;
   font-family: "BPG Arial Caps", sans-serif;
+}
+@media only screen and (max-width: 1687px) {
+  .tSec .smallTxt p {
+    font-size: 16px;
+    width: 650px;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 1687px) {
+  .tSec .smallTxt li p {
+    font-size: 12px;
+    width: 650px;
+    margin-top: 10px;
+  }
 }
 .tSec .smallTxt button {
   background-color: #70C174;
@@ -293,6 +318,11 @@ header div ul li a {
   line-height: 150%;
   width: 70%;
 }
+@media only screen and (max-width: 1687px) {
+  .cardBox div .cardTxt h4 {
+    font-size: 24px;
+  }
+}
 .cardBox div .cardTxt p {
   margin: 5px;
   color: #FFF;
@@ -301,6 +331,11 @@ header div ul li a {
   font-weight: 400;
   line-height: 150%;
   width: 70%;
+}
+@media only screen and (max-width: 1687px) {
+  .cardBox div .cardTxt p {
+    font-size: 12px;
+  }
 }
 
 .secChar {

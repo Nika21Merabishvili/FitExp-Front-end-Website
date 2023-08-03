@@ -2,7 +2,7 @@ $pageFont:"BPG Arial Caps", sans-serif;
 $primColor:#1D2130;
 $secColor:#525560;
 @import "mixins";
-
+@import 'animate.css';
 @include myHeader;
 
 .fSec {
