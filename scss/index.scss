@@ -21,7 +21,9 @@ $secColor:#525560;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            @media only screen and (max-width: 300px) {
+                top:10%;
+            }
 
 
             h1{
@@ -94,6 +96,7 @@ $secColor:#525560;
         }
         @media only screen and (max-width: 500px) {
             width: 250px;
+            height: 450px;
         }
         h2{
             font-family: $pageFont;
@@ -524,6 +527,7 @@ $secColor:#525560;
                 font-size: 24px;
                 width: 250px;
                 margin: 0 auto;
+                height: 150px;
             }
         }
         p{
@@ -616,6 +620,9 @@ $secColor:#525560;
         justify-content: space-around;
         
     }
+    @media only screen and (max-width: 500px) {
+        margin: 10px auto;
+    }
     .resCARDDIV{
         width: 30%;
         position: relative;
@@ -657,9 +664,9 @@ $secColor:#525560;
                     width: auto;
                     
                 }
-                @media only screen and (max-width: 450px) {
-                    
-                    font-size: 20px;
+                @media only screen and (max-width: 500px) {
+                    line-height: 140%; 
+                    font-size: 18px;
                 }
             }
             p{
@@ -676,6 +683,12 @@ $secColor:#525560;
                 @media only screen and (max-width: 500px) {
                     width: auto;
                     
+                }
+                @media only screen and (max-width: 500px) {
+                    line-height: 140%; 
+                    margin: 0 auto;
+                    font-size: 10px;
+                    width: 225px;
                 }
             }
         }
@@ -742,6 +755,7 @@ $secColor:#525560;
                 }
                 @media only screen and (max-width: 500px) {
                     width: 250px;
+                    font-size: 18px;
                 }
             }
         }

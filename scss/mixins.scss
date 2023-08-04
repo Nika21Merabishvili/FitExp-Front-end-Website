@@ -141,9 +141,10 @@ $secColor:#525560;
                     @media only screen and (max-width: 600px) {
                         font-size: 40px;
                     }
-                    @media only screen and (max-width: 450px) {
-                        font-size: 32px;
+                    @media only screen and (max-width: 500px) {
+                        font-size: 24px;
                     }
+                    
                 }
                 #buttonI{
                             
@@ -154,6 +155,9 @@ $secColor:#525560;
                     @media only screen and (max-width: 600px) {
                         min-height: 0px;
                         padding: 4px 5px;
+                    }
+                    @media only screen and (max-width: 350px) {
+                        font-size: 12px;
                     }
                 
                 }
@@ -172,6 +176,9 @@ $secColor:#525560;
                         min-height: 0px;
                         padding: 4px 5px;
                     }
+                    @media only screen and (max-width: 350px) {
+                        font-size: 12px;
+                    }
                 
                 
                 }
@@ -184,6 +191,9 @@ $secColor:#525560;
                     margin-top: 15px;
                     display: flex;
                     justify-content: space-around; 
+                    @media only screen and (max-width: 350px) {
+                        margin-top: 5px;
+                    }
                 }
             }
         }
@@ -236,12 +246,24 @@ $secColor:#525560;
             font-size: 40px;
             font-weight: 700;
             line-height: 140%; /* 56px */
+            @media only screen and (max-width: 500px) {
+                font-size: 28px;
+            }
+            
+            @media only screen and (max-width: 300px) {
+                font-size: 24px;
+                width: 225px;
+            }
             
         }
         .subDv{
             width: 40%;
             @media only screen and (max-width: 799px) {
                 width: 288px;
+            }
+            @media only screen and (max-width: 300px) {
+                
+                width: 240px;
             }
         }
         .sub{
@@ -250,6 +272,9 @@ $secColor:#525560;
             height: 40px;
             border-radius:  10px 0px 0px 10px  ;
             margin-right: -5px;
+            @media only screen and (max-width: 500px) {
+                width: 120px;
+            }
             
         }
         #subButton{

@@ -185,10 +185,26 @@ header div ul li a {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
+@media only screen and (max-width: 600px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto h2 {
+    font-size: 32px;
+  }
+}
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
   background-color: #70C174;
   color: white;
   border-color: #70C174;
+}
+@media only screen and (max-width: 600px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
+    min-height: 0px;
+    padding: 4px 5px;
+  }
 }
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonI:hover {
   background-color: white;
@@ -199,6 +215,12 @@ header div ul li a {
   background-color: white;
   color: #1D2130;
   border-color: white;
+}
+@media only screen and (max-width: 600px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto #buttonII {
+    min-height: 0px;
+    padding: 4px 5px;
+  }
 }
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonII:hover {
   background-color: #1D2130;
@@ -328,11 +350,23 @@ footer .footDv {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 550px) {
+  footer .footDv {
+    align-content: center;
+    flex-direction: column-reverse;
+  }
 }
 footer .lists {
   display: flex;
   width: 20%;
   justify-content: space-between;
+}
+@media only screen and (max-width: 999px) {
+  footer .lists {
+    width: 170px;
+  }
 }
 footer .lists li {
   margin: 15px 0;
@@ -345,6 +379,11 @@ footer .lists a {
   font-weight: 400;
   line-height: 160%; /* 22.4px */
 }
+@media only screen and (max-width: 550px) {
+  footer .lists a {
+    text-align: center;
+  }
+}
 footer h1 {
   color: #FFF;
   font-family: "BPG Arial Caps", sans-serif;
@@ -354,6 +393,11 @@ footer h1 {
 }
 footer .subDv {
   width: 40%;
+}
+@media only screen and (max-width: 799px) {
+  footer .subDv {
+    width: 288px;
+  }
 }
 footer .sub {
   border-color: white;
