@@ -82,6 +82,7 @@ $secColor:#525560;
       -webkit-user-select: none;
       touch-action: manipulation;
       vertical-align: middle;
+      
     }
     
     .button-24:hover,
@@ -137,6 +138,12 @@ $secColor:#525560;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 120%; /* 57.6px */
+                    @media only screen and (max-width: 600px) {
+                        font-size: 40px;
+                    }
+                    @media only screen and (max-width: 450px) {
+                        font-size: 32px;
+                    }
                 }
                 #buttonI{
                             
@@ -144,20 +151,27 @@ $secColor:#525560;
                     color: white ;
                     border-color: #70C174;
                     
-                
+                    @media only screen and (max-width: 600px) {
+                        min-height: 0px;
+                        padding: 4px 5px;
+                    }
                 
                 }
                 #buttonI:hover{
                     background-color: white;
                     color: #70C174 ;
                     border-color: #70C174;
+                    
                 }
                 #buttonII{
                             
                     background-color: white;
                     color: $primColor;
                     border-color: white;
-                    
+                    @media only screen and (max-width: 600px) {
+                        min-height: 0px;
+                        padding: 4px 5px;
+                    }
                 
                 
                 }
@@ -188,11 +202,19 @@ $secColor:#525560;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            @media only screen and (max-width: 550px) {
+                align-content: center;
+                flex-direction: column-reverse
+            }
         }
         .lists{
             display: flex;
             width: 20%;
             justify-content: space-between;
+            @media only screen and (max-width: 999px) {
+                width: 170px;
+            }
             li{
                 margin: 15px 0;
             }
@@ -203,6 +225,9 @@ $secColor:#525560;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 160%; /* 22.4px */
+                @media only screen and (max-width: 550px) {
+                    text-align: center;
+                }
             }
         }
         h1{
@@ -215,7 +240,9 @@ $secColor:#525560;
         }
         .subDv{
             width: 40%;
-            
+            @media only screen and (max-width: 799px) {
+                width: 288px;
+            }
         }
         .sub{
             border-color: white ;

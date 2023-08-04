@@ -37,6 +37,9 @@ $secColor:#525560;
                 @media only screen and (max-width: 835px) {
                     font-size: 50px;
                 }
+                @media only screen and (max-width: 500px) {
+                    font-size: 30px;
+                }
                 
             }
             #soloButton{
@@ -45,7 +48,11 @@ $secColor:#525560;
                 border-color: white;
                 
                 bottom: 50%;
-                left: 5%
+                left: 5%;
+                @media only screen and (max-width: 600px) {
+                    min-height: 0px;
+                    padding: 5px 6px;
+                }
             }
             #soloButton:hover{
                 background-color: $primColor;
@@ -85,6 +92,9 @@ $secColor:#525560;
             flex-direction: column;
             align-items: center;
         }
+        @media only screen and (max-width: 500px) {
+            width: 250px;
+        }
         h2{
             font-family: $pageFont;
             color: $primColor;
@@ -119,6 +129,11 @@ $secColor:#525560;
                 text-align: center;
                 margin: 0px;
             }
+            @media only screen and (max-width: 500px) {
+                font-size: 24px;
+                width: 250px;
+                margin: 0 auto;
+            }
         }
         p{
             font-family: $pageFont;
@@ -139,6 +154,9 @@ $secColor:#525560;
             @media only screen and (max-width: 835px) {
                 text-align: center;
                 margin: 0px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 250px;
             }
         }
         button{
@@ -184,6 +202,9 @@ $secColor:#525560;
             }
             @media only screen and (max-width: 835px) {
                 width: 400px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 250px;
             }
         img{
             width: 100%;
@@ -265,6 +286,11 @@ $secColor:#525560;
                 text-align: center;
                 margin: 0px;
             }
+            @media only screen and (max-width: 500px) {
+                font-size: 24px;
+                width: 250px;
+                margin: 0 auto;
+            }
         }
         p{
             margin-top: 25px;
@@ -291,6 +317,11 @@ $secColor:#525560;
                 text-align: center;
                 margin: 0px;
             }
+            @media only screen and (max-width: 500px) {
+                
+                width: 250px;
+                margin: 0 auto;
+            }
         }
         ul{
             margin: 15px; 
@@ -309,6 +340,11 @@ $secColor:#525560;
             @media only screen and (max-width: 835px) {
                 justify-content: center;
                 margin: 0px;
+            }
+            @media only screen and (max-width: 500px) {
+                
+                width: 250px;
+                margin: 0 auto;
             }
         }
         #liX1{
@@ -349,6 +385,9 @@ $secColor:#525560;
                     width: 250px;
                     margin-top: 10px;
                 }
+                @media only screen and (max-width: 500px) {
+                    width: 250px;
+                }
             }
         }
         
@@ -386,6 +425,9 @@ $secColor:#525560;
             }
             @media only screen and (max-width: 835px) {
                 width: 400px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 250px;
             }
         img{
             width: 100%;
@@ -433,6 +475,7 @@ $secColor:#525560;
         @media only screen and (max-width: 981px) {
             width: 400px;
         }
+        
         @media only screen and (max-width: 888px) {
             height: 200px;
             margin: 0px;
@@ -440,7 +483,9 @@ $secColor:#525560;
             flex-direction: column;
             align-items: center;
         }
-        
+        @media only screen and (max-width: 500px) {
+            width: 250px;
+        }
         h2{
             font-family: $pageFont;
             color: $primColor;
@@ -471,9 +516,14 @@ $secColor:#525560;
             @media only screen and (max-width: 981px) {
                 width:400px ;
             }
-            @media only screen and (max-width: 835px) {
+            @media only screen and (max-width: 888px) {
                 text-align: center;
                 margin: 0px;
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 24px;
+                width: 250px;
+                margin: 0 auto;
             }
         }
         p{
@@ -495,6 +545,9 @@ $secColor:#525560;
             @media only screen and (max-width: 835px) {
                 text-align: center;
                 margin: 0px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 250px;
             }
         }
         button{
@@ -518,7 +571,7 @@ $secColor:#525560;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        @media only screen and (max-width: 835px) {
+        @media only screen and (max-width: 888px) {
             flex-direction: column-reverse;
             align-items: center;
         }
@@ -541,6 +594,9 @@ $secColor:#525560;
             @media only screen and (max-width: 835px) {
                 width: 400px;
             }
+            @media only screen and (max-width: 500px) {
+                width: 250px;
+            }
         img{
             width: 100%;
             border-radius: 10px;
@@ -560,12 +616,15 @@ $secColor:#525560;
         justify-content: space-around;
         
     }
-    div{
+    .resCARDDIV{
         width: 30%;
         position: relative;
         @media only screen and (max-width: 1488px) {
             width: 400px;
             margin-top: 15px;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 250px;
         }
         img{
             width: 100%;
@@ -577,6 +636,13 @@ $secColor:#525560;
             top: 10%;
             left: 5%;
             width: 100%;
+            
+            @media only screen and (max-width: 500px) {
+                text-align: center;
+                top: 0px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
             h4{
                 color: #FFF;
                 font-family: $pageFont;
@@ -587,7 +653,14 @@ $secColor:#525560;
                 @media only screen and (max-width: 1687px) {
                     font-size: 24px;
                 }
-                
+                @media only screen and (max-width: 500px) {
+                    width: auto;
+                    
+                }
+                @media only screen and (max-width: 450px) {
+                    
+                    font-size: 20px;
+                }
             }
             p{
                 margin: 5px;
@@ -599,6 +672,10 @@ $secColor:#525560;
                 width: 70%;
                 @media only screen and (max-width: 1687px) {
                     font-size: 12px;
+                }
+                @media only screen and (max-width: 500px) {
+                    width: auto;
+                    
                 }
             }
         }
@@ -640,6 +717,11 @@ $secColor:#525560;
                     text-align: center;
                     margin: 0px;
                 }
+                @media only screen and (max-width: 500px) {
+                    font-size: 24px;
+                    width: 250px;
+                    margin: 0 auto;
+                }
                 
             }
             p{
@@ -658,10 +740,17 @@ $secColor:#525560;
                     text-align: center;
                     margin: 0px;
                 }
+                @media only screen and (max-width: 500px) {
+                    width: 250px;
+                }
             }
         }
         .chart{
             width: 25%;
+            @media only screen and (max-width: 679px) {
+                width: 250px;
+                margin-top: 15px;
+            }
             img{
                 width: 100%;
             }
