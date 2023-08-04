@@ -311,6 +311,17 @@ footer h1 {
   font-weight: 700;
   line-height: 140%; /* 56px */
 }
+@media only screen and (max-width: 500px) {
+  footer h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  footer h1 {
+    font-size: 24px;
+    width: 225px;
+  }
+}
 footer .subDv {
   width: 40%;
 }
@@ -319,12 +330,22 @@ footer .subDv {
     width: 288px;
   }
 }
+@media only screen and (max-width: 300px) {
+  footer .subDv {
+    width: 240px;
+  }
+}
 footer .sub {
   border-color: white;
   background-color: #0B0706;
   height: 40px;
   border-radius: 10px 0px 0px 10px;
   margin-right: -5px;
+}
+@media only screen and (max-width: 500px) {
+  footer .sub {
+    width: 120px;
+  }
 }
 footer #subButton {
   border: 0px;

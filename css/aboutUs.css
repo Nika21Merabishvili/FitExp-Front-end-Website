@@ -190,9 +190,9 @@ header div ul li a {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .longPhoto .longPhotoWtext .textInLongPhoto h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
@@ -204,6 +204,11 @@ header div ul li a {
   .longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
     min-height: 0px;
     padding: 4px 5px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto #buttonI {
+    font-size: 12px;
   }
 }
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonI:hover {
@@ -222,6 +227,11 @@ header div ul li a {
     padding: 4px 5px;
   }
 }
+@media only screen and (max-width: 350px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto #buttonII {
+    font-size: 12px;
+  }
+}
 .longPhoto .longPhotoWtext .textInLongPhoto #buttonII:hover {
   background-color: #1D2130;
   color: white;
@@ -231,6 +241,11 @@ header div ul li a {
   margin-top: 15px;
   display: flex;
   justify-content: space-around;
+}
+@media only screen and (max-width: 350px) {
+  .longPhoto .longPhotoWtext .textInLongPhoto .buttons {
+    margin-top: 5px;
+  }
 }
 
 .ttxtSec {
@@ -391,6 +406,17 @@ footer h1 {
   font-weight: 700;
   line-height: 140%; /* 56px */
 }
+@media only screen and (max-width: 500px) {
+  footer h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  footer h1 {
+    font-size: 24px;
+    width: 225px;
+  }
+}
 footer .subDv {
   width: 40%;
 }
@@ -399,12 +425,22 @@ footer .subDv {
     width: 288px;
   }
 }
+@media only screen and (max-width: 300px) {
+  footer .subDv {
+    width: 240px;
+  }
+}
 footer .sub {
   border-color: white;
   background-color: #0B0706;
   height: 40px;
   border-radius: 10px 0px 0px 10px;
   margin-right: -5px;
+}
+@media only screen and (max-width: 500px) {
+  footer .sub {
+    width: 120px;
+  }
 }
 footer #subButton {
   border: 0px;
