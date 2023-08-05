@@ -108,6 +108,12 @@ header div ul li a {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 535px) {
+  .fSec .mDv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .fSec .infDv {
   display: flex;
   width: 50%;
@@ -115,14 +121,30 @@ header div ul li a {
 .fSec .infDv img {
   transform: translate(0, -150%);
 }
+@media only screen and (max-width: 535px) {
+  .fSec .infDv {
+    justify-content: center;
+  }
+}
 .fSec .smallTxt {
   margin-left: 15px;
   height: 70%;
-  position: relative;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+  }
 }
 .fSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt h2 {
+    text-align: center;
+  }
 }
 .fSec .smallTxt h1 {
   font-size: 48px;
@@ -138,9 +160,31 @@ header div ul li a {
     width: 350px;
   }
 }
+@media only screen and (max-width: 667px) {
+  .fSec .smallTxt h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt h1 {
+    text-align: center;
+  }
+}
 .fSec .wwd {
   width: 40%;
   margin-top: 33px;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .fSec .wwd {
+    width: 280px;
+  }
 }
 .fSec .wwd h3 {
   color: #1D2130;
@@ -154,6 +198,17 @@ header div ul li a {
   .fSec .wwd h3 {
     line-height: 140%;
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .fSec .wwd h3 {
+    width: 250px;
+    margin: 0 auto;
   }
 }
 .fSec .wwd p {
@@ -170,6 +225,17 @@ header div ul li a {
   .fSec .wwd p {
     line-height: 140%;
     font-size: 13px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .fSec .wwd p {
+    width: 250px;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -309,12 +375,23 @@ header div ul li a {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 450px) {
+  .ttxtSec .txtCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .ttxtSec .txtCards .cardTxt {
   width: 30%;
 }
 @media only screen and (max-width: 667px) {
   .ttxtSec .txtCards .cardTxt {
     width: 45%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ttxtSec .txtCards .cardTxt {
+    width: 250px;
   }
 }
 .ttxtSec .txtCards .cardTxt h4 {
@@ -334,6 +411,11 @@ header div ul li a {
     font-size: 13px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .ttxtSec .txtCards .cardTxt h4 {
+    text-align: center;
+  }
+}
 .ttxtSec .txtCards .cardTxt h3 {
   color: #1D2130;
   font-family: "BPG Arial Caps", sans-serif;
@@ -347,6 +429,11 @@ header div ul li a {
   .ttxtSec .txtCards .cardTxt h3 {
     line-height: 140%;
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ttxtSec .txtCards .cardTxt h3 {
+    text-align: center;
   }
 }
 .ttxtSec .txtCards .cardTxt p {
@@ -363,6 +450,11 @@ header div ul li a {
   .ttxtSec .txtCards .cardTxt p {
     line-height: 140%;
     font-size: 13px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ttxtSec .txtCards .cardTxt p {
+    text-align: center;
   }
 }
 
@@ -384,6 +476,11 @@ header div ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 57.6px */
+}
+@media only screen and (max-width: 535px) {
+  .awards .aDv .atDv {
+    font-size: 40px;
+  }
 }
 .awards .aDv .aI {
   margin-top: 30px;
@@ -410,6 +507,11 @@ header div ul li a {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
+@media only screen and (max-width: 535px) {
+  .team .teamDiv h1 {
+    font-size: 40px;
+  }
+}
 .team .teamDiv .cardBox {
   width: 100%;
   display: flex;
@@ -424,6 +526,11 @@ header div ul li a {
 .team .teamDiv .cardBox .card {
   width: 300px;
   margin-top: 50px;
+}
+@media only screen and (max-width: 320px) {
+  .team .teamDiv .cardBox .card {
+    width: 250px;
+  }
 }
 .team .teamDiv .cardBox .card img {
   width: 100%;
