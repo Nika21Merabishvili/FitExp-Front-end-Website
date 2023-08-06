@@ -103,6 +103,16 @@ header div ul li a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 1039px) {
+  .sSec {
+    margin-top: 73px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sSec .lnDv {
+    display: none;
+  }
+}
 .sSec .lnDv img {
   transform: translate(0, -150%);
 }
@@ -127,7 +137,7 @@ header div ul li a {
   font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
   line-height: 1.4;
-  width: 850px;
+  width: 100%;
 }
 .sSec .smallTxt button {
   background-color: #70C174;
@@ -147,9 +157,20 @@ header div ul li a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 750px) {
+  .sSec .mDv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sSec .infDv {
   display: flex;
   flex-direction: row;
+}
+@media only screen and (max-width: 535px) {
+  .sSec .infDv {
+    justify-content: center;
+  }
 }
 .sSec .mgDv {
   width: 30%;
@@ -194,6 +215,11 @@ header div ul li a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media only screen and (max-width: 800px) {
+  .formSec form {
+    width: 100%;
+  }
+}
 .formSec form div {
   display: flex;
   flex-direction: column;
@@ -230,6 +256,11 @@ header div ul li a {
   box-sizing: border-box;
   border: none;
   border: 1px solid #E5E5E5;
+}
+@media only screen and (max-width: 800px) {
+  .formSec textarea {
+    width: 400px;
+  }
 }
 
 .button {

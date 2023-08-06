@@ -12,8 +12,13 @@ $secColor:#525560;
     background-color: #EBF0F9;
     padding-top: 30px;
     padding-bottom: 30px;
+    @media only screen and (max-width: 1039px) {
+        margin-top: 73px;
+    }
     .lnDv{
-        
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
         img{
             transform: translate(0, -150%);
             
@@ -40,7 +45,8 @@ $secColor:#525560;
             font-family: $pageFont;
             color: $secColor;
             line-height: 1.4;
-            width: 850px;
+            width: 100%;
+
         }
         button{
             background-color: #70C174;
@@ -60,10 +66,20 @@ $secColor:#525560;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: 750px) {
+            flex-direction: column;
+            align-items: center;
+            
+        }
     }
     .infDv{
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width: 750px) {
+            
+            justify-content: center;
+            
+        }
     }
     .mgDv{
         width: 30%;
@@ -109,6 +125,9 @@ $secColor:#525560;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+        }
         div{
             display: flex;
             flex-direction: column;
@@ -147,7 +166,9 @@ $secColor:#525560;
         box-sizing: border-box;
         border: none;
         border: 1px solid #E5E5E5;
-    
+        @media only screen and (max-width: 800px) {
+            width: 400px;
+        }
     }
 }
 
