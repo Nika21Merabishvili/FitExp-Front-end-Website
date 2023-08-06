@@ -9,12 +9,23 @@ $secColor:#525560;
     margin-top: 82px;
     width: 100%;
     margin-bottom: 40px;
+    .lnDv{
+        @media only screen and (max-width: 650px) {
+            display: none;
+            
+        }
+    }
     .mDv {
         width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: 535px) {
+            flex-direction: column;
+            align-items: center;
+            
+        }
     }
     .infDv{
         display: flex;
@@ -22,14 +33,29 @@ $secColor:#525560;
         img {
             transform: translate(0, -150%);
         }
+        @media only screen and (max-width: 535px) {
+            
+            justify-content: center;
+            
+        }
     }
     .smallTxt{
         margin-left: 15px;
         height: 70%;
         position: relative;
+        @media only screen and (max-width: 535px) {
+            margin: 0 auto;
+            height: 120px;
+            width: auto;
+            
+        }
         h2{
             font-family: $pageFont;
             color: $primColor;
+            @media only screen and (max-width: 535px) {
+                text-align: center;
+                
+            }
         }
         h1{
             font-size: 48px;
@@ -37,11 +63,31 @@ $secColor:#525560;
             font-weight: 700;
             line-height: 1.6;
             font-family: $pageFont;
+            @media only screen and (max-width: 1050px) {
+                font-size: 40px;
+                line-height: 1.4;
+            }
+            @media only screen and (max-width: 850px) {
+                font-size: 32px;
+                
+            }
+            @media only screen and (max-width: 535px) {
+                text-align: center;
+                
+            }
         }
     }
     .wwd{
         width: 40%;
         margin-top: 33px;
+        @media only screen and (max-width: 535px) {
+            margin-top: 20px;
+            width: 300px;
+        }
+        @media only screen and (max-width: 350px) {
+            width: 280px;
+            // margin: 0 auto;
+        }
         h3{
             color: $primColor;
             font-family: $pageFont;
@@ -49,6 +95,22 @@ $secColor:#525560;
             font-style: normal;
             font-weight: 700;
             line-height: 150%; /* 30px */
+            @media only screen and (max-width: 1050px) {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            @media only screen and (max-width: 850px) {
+                font-size: 17px;
+                
+            }
+            @media only screen and (max-width: 535px) {
+                text-align: center;
+                
+            }
+            @media only screen and (max-width: 350px) {
+                width: 250px;
+                margin: 0 auto;
+            }
         }
         p{
             color: $primColor;
@@ -59,6 +121,22 @@ $secColor:#525560;
             font-style: normal;
             font-weight: 400;
             line-height: 160%; /* 25.6px */
+            @media only screen and (max-width: 1050px) {
+                font-size: 14px;
+                line-height: 140%;
+            }
+            @media only screen and (max-width: 850px) {
+                font-size: 13px;
+                
+            }
+            @media only screen and (max-width: 535px) {
+                text-align: center;
+                
+            }
+            @media only screen and (max-width: 350px) {
+                width: 250px;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -69,6 +147,10 @@ $secColor:#525560;
     div{
         width: 70%;
         margin: 0 auto;
+        @media only screen and (max-width: 850px) {
+            width: 90%;
+            
+        }
         .card{
             width: 100%;
             position: relative;
@@ -81,17 +163,33 @@ $secColor:#525560;
                 text-align: center;
                 transform: translate(-50%, -50%);
                 /* H2 */
-                font-family: Roboto;
+                font-family: $pageFont;
                 font-size: 48px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 120%; /* 57.6px */
+                
+                @media only screen and (max-width: 1050px) {
+                    font-size: 40px;
+                }
+                @media only screen and (max-width: 850px) {
+                    font-size: 32px;
+                    
+                }
+                @media only screen and (max-width: 650px) {
+                    width: 100%;
+                    font-size: 28px;
+                }
+                @media only screen and (max-width: 350px) {
+                    font-size: 22px;
+                }
             }
         }
         img{
             width: 100%;
             border-radius: 20px;
-            margin: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             filter: brightness(70%);
         
         }

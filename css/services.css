@@ -102,12 +102,23 @@ header div ul li a {
   width: 100%;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 650px) {
+  .fSec .lnDv {
+    display: none;
+  }
+}
 .fSec .mDv {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .mDv {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .fSec .infDv {
   display: flex;
@@ -116,14 +127,31 @@ header div ul li a {
 .fSec .infDv img {
   transform: translate(0, -150%);
 }
+@media only screen and (max-width: 535px) {
+  .fSec .infDv {
+    justify-content: center;
+  }
+}
 .fSec .smallTxt {
   margin-left: 15px;
   height: 70%;
   position: relative;
 }
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt {
+    margin: 0 auto;
+    height: 120px;
+    width: auto;
+  }
+}
 .fSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt h2 {
+    text-align: center;
+  }
 }
 .fSec .smallTxt h1 {
   font-size: 48px;
@@ -132,9 +160,36 @@ header div ul li a {
   line-height: 1.6;
   font-family: "BPG Arial Caps", sans-serif;
 }
+@media only screen and (max-width: 1050px) {
+  .fSec .smallTxt h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .fSec .smallTxt h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .smallTxt h1 {
+    text-align: center;
+  }
+}
 .fSec .wwd {
   width: 40%;
   margin-top: 33px;
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .fSec .wwd {
+    width: 280px;
+  }
 }
 .fSec .wwd h3 {
   color: #1D2130;
@@ -143,6 +198,28 @@ header div ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */
+}
+@media only screen and (max-width: 1050px) {
+  .fSec .wwd h3 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .fSec .wwd h3 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .fSec .wwd h3 {
+    width: 250px;
+    margin: 0 auto;
+  }
 }
 .fSec .wwd p {
   color: #1D2130;
@@ -154,6 +231,28 @@ header div ul li a {
   font-weight: 400;
   line-height: 160%; /* 25.6px */
 }
+@media only screen and (max-width: 1050px) {
+  .fSec .wwd p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .fSec .wwd p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .fSec .wwd p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .fSec .wwd p {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
 
 .servCard {
   width: 100%;
@@ -161,6 +260,11 @@ header div ul li a {
 .servCard div {
   width: 70%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 850px) {
+  .servCard div {
+    width: 90%;
+  }
 }
 .servCard div .card {
   width: 100%;
@@ -175,16 +279,38 @@ header div ul li a {
   text-align: center;
   transform: translate(-50%, -50%);
   /* H2 */
-  font-family: Roboto;
+  font-family: "BPG Arial Caps", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
+@media only screen and (max-width: 1050px) {
+  .servCard div .card h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .servCard div .card h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .servCard div .card h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .servCard div .card h1 {
+    font-size: 22px;
+  }
+}
 .servCard div img {
   width: 100%;
   border-radius: 20px;
-  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   filter: brightness(70%);
 }
 
