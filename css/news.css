@@ -103,17 +103,36 @@ header div ul li a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 1039px) {
+  .sSec {
+    margin-top: 73px;
+  }
+}
+@media only screen and (max-width: 1058px) {
+  .sSec .lnDv {
+    display: none;
+  }
+}
 .sSec .lnDv img {
   transform: translate(0, -150%);
 }
 .sSec .smallTxt {
   margin-left: 15px;
-  height: 70%;
   position: relative;
+}
+@media only screen and (max-width: 872px) {
+  .sSec .smallTxt {
+    margin-left: 0px;
+  }
 }
 .sSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 872px) {
+  .sSec .smallTxt h2 {
+    text-align: center;
+  }
 }
 .sSec .smallTxt h1 {
   font-size: 48px;
@@ -122,11 +141,54 @@ header div ul li a {
   line-height: 1.6;
   font-family: "BPG Arial Caps", sans-serif;
 }
+@media only screen and (max-width: 1403px) {
+  .sSec .smallTxt h1 {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 1039px) {
+  .sSec .smallTxt h1 {
+    font-size: 40px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 872px) {
+  .sSec .smallTxt h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 432px) {
+  .sSec .smallTxt h1 {
+    width: 250px;
+    font-size: 32px;
+  }
+}
 .sSec .smallTxt p {
   font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
   line-height: 1.4;
-  width: 850px;
+  width: auto;
+}
+@media only screen and (max-width: 1403px) {
+  .sSec .smallTxt p {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 1039px) {
+  .sSec .smallTxt p {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 872px) {
+  .sSec .smallTxt p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 432px) {
+  .sSec .smallTxt p {
+    width: 250px;
+    font-size: 14px;
+  }
 }
 .sSec .smallTxt button {
   background-color: #70C174;
@@ -146,23 +208,46 @@ header div ul li a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 872px) {
+  .sSec .mDv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sSec .infDv {
   display: flex;
 }
 .sSec .mgDv {
-  width: 30%;
+  width: 420px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 432px) {
+  .sSec .mgDv {
+    width: 95%;
+  }
 }
 .sSec .mgDv div {
   width: 100%;
   display: flex;
 }
+@media only screen and (max-width: 432px) {
+  .sSec .mgDv div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sSec .mgDv img {
   width: 30%;
   margin: 10px;
   border-radius: 5px;
+}
+@media only screen and (max-width: 432px) {
+  .sSec .mgDv img {
+    width: 125px;
+  }
 }
 .sSec .mgDv p {
   color: var(--secondary-text, #525560);
@@ -173,6 +258,11 @@ header div ul li a {
   font-weight: 400;
   line-height: 160%;
   margin: 10px;
+}
+@media only screen and (max-width: 432px) {
+  .sSec .mgDv p {
+    text-align: center;
+  }
 }
 
 .news {
@@ -193,10 +283,16 @@ header div ul li a {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
+@media only screen and (max-width: 432px) {
+  .news .newsDv h1 {
+    width: 250px;
+    font-size: 32px;
+  }
+}
 .news .newsDv .cardBox {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .news .newsDv .cardBox .card {
