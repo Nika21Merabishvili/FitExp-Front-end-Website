@@ -1,3 +1,14 @@
+
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
   width: 100%;
   padding: 20px;
@@ -10,23 +21,39 @@ header div {
   width: 90%;
   margin: 0 auto;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header div a {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 header div img {
   height: 30px;
 }
 header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 1039px) {
   header div ul {
@@ -50,8 +77,10 @@ header div ul li a {
   background: #1D2130;
   border: 1px solid #1D2130;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -66,9 +95,11 @@ header div ul li a {
   text-rendering: geometricprecision;
   text-transform: none;
   -moz-user-select: none;
-       user-select: none;
+       -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
 }
 
@@ -111,9 +142,16 @@ header div ul li a {
   top: 15%;
   left: 5%;
   height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 300px) {
   .fSec div .textWb {
@@ -163,7 +201,9 @@ header div ul li a {
   width: 100%;
 }
 .sSec .lnDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 @media only screen and (max-width: 1171px) {
   .sSec .lnDv img {
@@ -184,9 +224,16 @@ header div ul li a {
   .sSec .smallTxt {
     height: 400px;
     margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -289,7 +336,9 @@ header div ul li a {
 }
 @media only screen and (max-width: 835px) {
   .sSec .smallTxt button {
-    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
 }
 .sSec .smallTxt button:hover {
@@ -300,16 +349,27 @@ header div ul li a {
 .sSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 835px) {
   .sSec .mDv {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .sSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 835px) {
@@ -354,7 +414,9 @@ header div ul li a {
   }
 }
 .tSec .lnDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 @media only screen and (max-width: 1171px) {
   .tSec .lnDv img {
@@ -483,8 +545,11 @@ header div ul li a {
 }
 @media only screen and (max-width: 1488px) {
   .tSec .smallTxt ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 550px;
   }
 }
@@ -500,7 +565,9 @@ header div ul li a {
 }
 @media only screen and (max-width: 835px) {
   .tSec .smallTxt ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0px;
   }
 }
@@ -579,16 +646,27 @@ header div ul li a {
 .tSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 835px) {
   .tSec .mDv {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .tSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .tSec .mgDv {
@@ -636,7 +714,9 @@ header div ul li a {
   width: 100%;
 }
 .fSec .lnDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 @media only screen and (max-width: 1171px) {
   .fSec .lnDv img {
@@ -657,9 +737,16 @@ header div ul li a {
   .fSec .smallTxt {
     height: 200px;
     margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -762,7 +849,9 @@ header div ul li a {
 }
 @media only screen and (max-width: 835px) {
   .fSec .smallTxt button {
-    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
 }
 .fSec .smallTxt button:hover {
@@ -773,16 +862,27 @@ header div ul li a {
 .fSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 888px) {
   .fSec .mDv {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .fSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 835px) {
@@ -816,14 +916,20 @@ header div ul li a {
 .cardBox {
   width: 90%;
   margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 40px;
 }
 @media only screen and (max-width: 1488px) {
   .cardBox {
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -849,7 +955,8 @@ header div ul li a {
 .cardBox .resCARDDIV img {
   width: 100%;
   border-radius: 15px;
-  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 .cardBox .resCARDDIV .cardTxt {
   position: absolute;
@@ -862,7 +969,9 @@ header div ul li a {
     text-align: center;
     top: 0px;
     left: 50%;
-    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
 }
 .cardBox .resCARDDIV .cardTxt h4 {
@@ -927,19 +1036,35 @@ header div ul li a {
 .secChar .charDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 679px) {
   .secChar .charDv {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .secChar .charDv .chartTxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .secChar .charDv .chartTxt h1 {
   color: white;
@@ -1019,13 +1144,16 @@ header div ul li a {
 .longPhoto .longPhotoWtext img {
   width: 100%;
   border-radius: 20px;
-  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 .longPhoto .longPhotoWtext .textInLongPhoto {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .longPhoto .longPhotoWtext .textInLongPhoto h2 {
   color: #FFF;
@@ -1091,8 +1219,11 @@ header div ul li a {
 }
 .longPhoto .longPhotoWtext .textInLongPhoto .buttons {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (max-width: 350px) {
   .longPhoto .longPhotoWtext .textInLongPhoto .buttons {
@@ -1110,20 +1241,33 @@ footer {
 footer .footDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 550px) {
   footer .footDv {
-    align-content: center;
-    flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 999px) {
   footer .lists {
@@ -1196,4 +1340,4 @@ footer #subButton {
   color: #0B0706;
   border-color: white;
   margin-bottom: 2px;
-}/*# sourceMappingURL=index.css.map */
+}

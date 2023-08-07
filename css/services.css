@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import 'animate.css';
 header {
   width: 100%;
@@ -11,23 +18,39 @@ header div {
   width: 90%;
   margin: 0 auto;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header div a {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 header div img {
   height: 30px;
 }
 header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 1039px) {
   header div ul {
@@ -51,8 +74,10 @@ header div ul li a {
   background: #1D2130;
   border: 1px solid #1D2130;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -67,9 +92,11 @@ header div ul li a {
   text-rendering: geometricprecision;
   text-transform: none;
   -moz-user-select: none;
-       user-select: none;
+       -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
 }
 
@@ -110,26 +137,43 @@ header div ul li a {
 .fSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 535px) {
   .fSec .mDv {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .fSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
 .fSec .infDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 @media only screen and (max-width: 535px) {
   .fSec .infDv {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .fSec .smallTxt {
@@ -260,6 +304,11 @@ header div ul li a {
 .servCard div {
   width: 70%;
   margin: 0 auto;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 @media only screen and (max-width: 850px) {
   .servCard div {
@@ -277,7 +326,9 @@ header div ul li a {
   z-index: 2;
   color: #FFF;
   text-align: center;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   /* H2 */
   font-family: "BPG Arial Caps", sans-serif;
   font-size: 48px;
@@ -311,7 +362,13 @@ header div ul li a {
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+.servCard div:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 footer {
@@ -324,20 +381,33 @@ footer {
 footer .footDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 550px) {
   footer .footDv {
-    align-content: center;
-    flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 999px) {
   footer .lists {
@@ -410,4 +480,4 @@ footer #subButton {
   color: #0B0706;
   border-color: white;
   margin-bottom: 2px;
-}/*# sourceMappingURL=services.css.map */
+}

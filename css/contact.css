@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
   width: 100%;
   padding: 20px;
@@ -10,23 +17,39 @@ header div {
   width: 90%;
   margin: 0 auto;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header div a {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 header div img {
   height: 30px;
 }
 header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 1039px) {
   header div ul {
@@ -50,8 +73,10 @@ header div ul li a {
   background: #1D2130;
   border: 1px solid #1D2130;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -66,9 +91,11 @@ header div ul li a {
   text-rendering: geometricprecision;
   text-transform: none;
   -moz-user-select: none;
-       user-select: none;
+       -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
 }
 
@@ -114,7 +141,9 @@ header div ul li a {
   }
 }
 .sSec .lnDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 .sSec .smallTxt {
   margin-left: 15px;
@@ -177,27 +206,48 @@ header div ul li a {
 .sSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 750px) {
   .sSec .mDv {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .sSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media only screen and (max-width: 750px) {
   .sSec .infDv {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .sSec .mgDv {
   width: 30%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 750px) {
@@ -207,8 +257,13 @@ header div ul li a {
 }
 .sSec .mgDv div {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .sSec .mgDv h2 {
   color: var(--primary-text, #1D2130);
@@ -239,12 +294,19 @@ header div ul li a {
   }
 }
 .sSec .mgDv .iconDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media only screen and (max-width: 750px) {
   .sSec .mgDv .iconDv {
-    justify-content: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 .sSec .mgDv img {
@@ -263,9 +325,13 @@ header div ul li a {
 .formSec form {
   width: 800px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (max-width: 800px) {
   .formSec form {
@@ -273,8 +339,13 @@ header div ul li a {
   }
 }
 .formSec form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .formSec label {
   font-family: "BPG Arial Caps", sans-serif;
@@ -289,7 +360,8 @@ header div ul li a {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -302,7 +374,8 @@ header div ul li a {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -315,7 +388,8 @@ header div ul li a {
   width: 700px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border: 1px solid #E5E5E5;
 }
@@ -331,8 +405,12 @@ header div ul li a {
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #buttonI {
@@ -371,20 +449,33 @@ footer {
 footer .footDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 550px) {
   footer .footDv {
-    align-content: center;
-    flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 999px) {
   footer .lists {
@@ -457,4 +548,4 @@ footer #subButton {
   color: #0B0706;
   border-color: white;
   margin-bottom: 2px;
-}/*# sourceMappingURL=contact.css.map */
+}

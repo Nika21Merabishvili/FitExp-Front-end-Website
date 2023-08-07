@@ -1,8 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 800px) {
   .center {
@@ -12,13 +21,18 @@
 
 .formSec {
   width: 100%;
+  margin-top: 100px;
 }
 .formSec form {
   width: 800px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (max-width: 800px) {
   .formSec form {
@@ -26,8 +40,13 @@
   }
 }
 .formSec form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .formSec label {
   font-family: "BPG Arial Caps", sans-serif;
@@ -42,7 +61,8 @@
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -55,7 +75,8 @@
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -68,20 +89,28 @@
   width: 700px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border: 1px solid #E5E5E5;
 }
 
 .button {
   padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 @media only screen and (max-width: 400px) {
   .button {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -105,8 +134,10 @@
   background: #1D2130;
   border: 1px solid #1D2130;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -121,9 +152,11 @@
   text-rendering: geometricprecision;
   text-transform: none;
   -moz-user-select: none;
-       user-select: none;
+       -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
 }
 
@@ -136,4 +169,4 @@
 
 .button-24:active {
   opacity: 0.5;
-}/*# sourceMappingURL=signIn.css.map */
+}

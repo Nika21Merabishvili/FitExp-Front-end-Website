@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
   width: 100%;
   padding: 20px;
@@ -10,23 +17,39 @@ header div {
   width: 90%;
   margin: 0 auto;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header div a {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 header div img {
   height: 30px;
 }
 header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 1039px) {
   header div ul {
@@ -50,8 +73,10 @@ header div ul li a {
   background: #1D2130;
   border: 1px solid #1D2130;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -66,9 +91,11 @@ header div ul li a {
   text-rendering: geometricprecision;
   text-transform: none;
   -moz-user-select: none;
-       user-select: none;
+       -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
 }
 
@@ -104,26 +131,43 @@ header div ul li a {
 .fSec .mDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 535px) {
   .fSec .mDv {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .fSec .infDv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
 .fSec .infDv img {
-  transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+          transform: translate(0, -150%);
 }
 @media only screen and (max-width: 535px) {
   .fSec .infDv {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .fSec .smallTxt {
@@ -257,13 +301,16 @@ header div ul li a {
 .longPhoto .longPhotoWtext img {
   width: 100%;
   border-radius: 20px;
-  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 .longPhoto .longPhotoWtext .textInLongPhoto {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .longPhoto .longPhotoWtext .textInLongPhoto h2 {
   color: #FFF;
@@ -329,8 +376,11 @@ header div ul li a {
 }
 .longPhoto .longPhotoWtext .textInLongPhoto .buttons {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (max-width: 350px) {
   .longPhoto .longPhotoWtext .textInLongPhoto .buttons {
@@ -343,42 +393,60 @@ header div ul li a {
   padding-top: 400px;
   padding-bottom: 100px;
   background: var(--green-tertiary, #EFF7F2);
-  transform: translate(0%, -40%);
+  -webkit-transform: translate(0%, -40%);
+      -ms-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
 }
 @media only screen and (max-width: 1300px) {
   .ttxtSec {
     padding-top: 250px;
-    transform: translate(0%, -30%);
+    -webkit-transform: translate(0%, -30%);
+        -ms-transform: translate(0%, -30%);
+            transform: translate(0%, -30%);
   }
 }
 @media only screen and (max-width: 1119px) {
   .ttxtSec {
-    transform: translate(0%, -20%);
+    -webkit-transform: translate(0%, -20%);
+        -ms-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
   }
 }
 @media only screen and (max-width: 850px) {
   .ttxtSec {
     padding-top: 150px;
-    transform: translate(0%, -20%);
+    -webkit-transform: translate(0%, -20%);
+        -ms-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
   }
 }
 @media only screen and (max-width: 667px) {
   .ttxtSec {
     padding-top: 100px;
     padding-bottom: 50px;
-    transform: translate(0%, -10%);
+    -webkit-transform: translate(0%, -10%);
+        -ms-transform: translate(0%, -10%);
+            transform: translate(0%, -10%);
   }
 }
 .ttxtSec .txtCards {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (max-width: 450px) {
   .ttxtSec .txtCards {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .ttxtSec .txtCards .cardTxt {
@@ -464,9 +532,16 @@ header div ul li a {
 .awards .aDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .awards .aDv .atDv {
   color: var(--primary-text, #1D2130);
@@ -514,13 +589,20 @@ header div ul li a {
 }
 .team .teamDiv .cardBox {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 667px) {
   .team .teamDiv .cardBox {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .team .teamDiv .cardBox .card {
@@ -546,20 +628,33 @@ footer {
 footer .footDv {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 550px) {
   footer .footDv {
-    align-content: center;
-    flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 footer .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media only screen and (max-width: 999px) {
   footer .lists {
@@ -632,4 +727,4 @@ footer #subButton {
   color: #0B0706;
   border-color: white;
   margin-bottom: 2px;
-}/*# sourceMappingURL=aboutUs.css.map */
+}
