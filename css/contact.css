@@ -122,9 +122,21 @@ header div ul li a {
   position: relative;
   width: 60%;
 }
+@media only screen and (max-width: 750px) {
+  .sSec .smallTxt {
+    width: auto;
+    margin-left: 0px;
+    height: 450px;
+  }
+}
 .sSec .smallTxt h2 {
   font-family: "BPG Arial Caps", sans-serif;
   color: #1D2130;
+}
+@media only screen and (max-width: 750px) {
+  .sSec .smallTxt h2 {
+    text-align: center;
+  }
 }
 .sSec .smallTxt h1 {
   font-size: 48px;
@@ -133,11 +145,22 @@ header div ul li a {
   line-height: 1.6;
   font-family: "BPG Arial Caps", sans-serif;
 }
+@media only screen and (max-width: 750px) {
+  .sSec .smallTxt h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
 .sSec .smallTxt p {
   font-family: "BPG Arial Caps", sans-serif;
   color: #525560;
   line-height: 1.4;
   width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  .sSec .smallTxt p {
+    text-align: center;
+  }
 }
 .sSec .smallTxt button {
   background-color: #70C174;
@@ -167,7 +190,7 @@ header div ul li a {
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 750px) {
   .sSec .infDv {
     justify-content: center;
   }
@@ -176,6 +199,11 @@ header div ul li a {
   width: 30%;
   flex-direction: column;
   display: flex;
+}
+@media only screen and (max-width: 750px) {
+  .sSec .mgDv {
+    width: auto;
+  }
 }
 .sSec .mgDv div {
   width: 100%;
@@ -190,6 +218,11 @@ header div ul li a {
   font-weight: 700;
   line-height: 160%; /* 38.4px */
 }
+@media only screen and (max-width: 750px) {
+  .sSec .mgDv h2 {
+    text-align: center;
+  }
+}
 .sSec .mgDv p {
   color: var(--secondary-text, #525560);
   /* Paragraph */
@@ -200,6 +233,20 @@ header div ul li a {
   line-height: 160%;
   margin: 10px;
 }
+@media only screen and (max-width: 750px) {
+  .sSec .mgDv p {
+    text-align: center;
+  }
+}
+.sSec .mgDv .iconDv {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 750px) {
+  .sSec .mgDv .iconDv {
+    justify-content: center !important;
+  }
+}
 .sSec .mgDv img {
   width: 15px;
 }
@@ -207,6 +254,11 @@ header div ul li a {
 .formSec {
   width: 100%;
   margin-top: 100px;
+}
+@media only screen and (max-width: 400px) {
+  .formSec {
+    margin-top: 50px;
+  }
 }
 .formSec form {
   width: 800px;
@@ -241,6 +293,11 @@ header div ul li a {
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
+@media only screen and (max-width: 400px) {
+  .formSec input[type=text] {
+    width: 250px;
+  }
+}
 .formSec input[type=email] {
   width: 300px;
   padding: 12px 20px;
@@ -248,6 +305,11 @@ header div ul li a {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
+}
+@media only screen and (max-width: 400px) {
+  .formSec input[type=email] {
+    width: 250px;
+  }
 }
 .formSec textarea {
   width: 700px;
@@ -260,6 +322,11 @@ header div ul li a {
 @media only screen and (max-width: 800px) {
   .formSec textarea {
     width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .formSec textarea {
+    width: 250px;
   }
 }
 
@@ -287,6 +354,11 @@ header div ul li a {
 iframe {
   width: 100%;
   margin-top: 100px;
+}
+@media only screen and (max-width: 400px) {
+  iframe {
+    height: 300px;
+  }
 }
 
 footer {
