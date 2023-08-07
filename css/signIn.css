@@ -1,6 +1,17 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 800px) {
+  .center {
+    top: 30%;
+  }
+}
+
 .formSec {
   width: 100%;
-  margin-top: 100px;
 }
 .formSec form {
   width: 800px;
@@ -8,6 +19,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media only screen and (max-width: 800px) {
+  .formSec form {
+    width: 100%;
+  }
 }
 .formSec form div {
   display: flex;
@@ -30,6 +46,11 @@
   border: none;
   border-bottom: 1px solid #E5E5E5;
 }
+@media only screen and (max-width: 400px) {
+  .formSec input[type=text] {
+    width: 250px;
+  }
+}
 .formSec input[type=email], .formSec input[type=password] {
   width: 300px;
   padding: 12px 20px;
@@ -37,6 +58,11 @@
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #E5E5E5;
+}
+@media only screen and (max-width: 400px) {
+  .formSec input[type=email], .formSec input[type=password] {
+    width: 250px;
+  }
 }
 .formSec textarea {
   width: 700px;
@@ -52,6 +78,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+@media only screen and (max-width: 400px) {
+  .button {
+    flex-wrap: wrap;
+  }
 }
 
 #buttonI {
